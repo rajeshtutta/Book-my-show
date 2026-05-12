@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = "rajeshtutta123/zomato"
+        DOCKER_IMAGE = "rajeshtutta123/Book-my-show"
         RECIPIENTS = "rajeshtutta123@gmail.com"
     }
 
