@@ -7,11 +7,11 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = "rajeshtutta123/Book-my-show"
-        RECIPIENTS = "rajeshtutta123@gmail.com"
-        APP_NAME = "Book-my-show"
-        APP_PORT = "3000"
-    }
+    DOCKER_IMAGE = "rajeshtutta123/book-my-show"
+    RECIPIENTS = "rajeshtutta123@gmail.com"
+    APP_NAME = "book-my-show"
+    APP_PORT = "3000"
+}
 
     stages {
 
