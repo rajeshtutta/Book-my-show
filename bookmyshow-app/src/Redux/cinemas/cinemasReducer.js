@@ -1,4 +1,3 @@
-import React from "react";
 import {
     GET_CINEMAS_FAILURE,
     GET_CINEMAS_REQUEST,
