@@ -7,9 +7,9 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = "rajeshtutta123/zomato"
+        DOCKER_IMAGE = "rajeshtutta123/Book-my-show"
         RECIPIENTS = "rajeshtutta123@gmail.com"
-        APP_NAME = "zomato"
+        APP_NAME = "Book-my-show"
         APP_PORT = "3000"
     }
 
