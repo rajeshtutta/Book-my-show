@@ -261,7 +261,7 @@ EOF
                 ${DOCKER_IMAGE}:latest
 
                 Application:
-                http://43.204.139.132:${APP_PORT}
+                http://15.207.120.230:${APP_PORT}
 
                 Jenkins Build:
                 ${env.BUILD_URL}
