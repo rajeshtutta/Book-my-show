@@ -1,4 +1,3 @@
-import React from "react";
 import { loadData, saveData } from "../../Utils/LocalStorage";
 
 import {
