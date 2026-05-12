@@ -6,5 +6,5 @@ test('renders application heading', () => {
 
   const headingElement = screen.getByText(/Book My Show Application/i);
 
-  expect(headingElement).toBeInTheDocument();
+  expect(headingElement).toBeTruthy();
 });
