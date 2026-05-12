@@ -56,19 +56,7 @@ pipeline {
             }
         }
 
-        stage('Build Application') {
-    steps {
-
-        dir('bookmyshow-app') {
-
-            sh '''
-            export NODE_OPTIONS=--openssl-legacy-provider
-            npm run build
-            '''
-        }
-    }
-}
-
+        
         stage('Run Tests') {
             steps {
                 dir('bookmyshow-app') {
