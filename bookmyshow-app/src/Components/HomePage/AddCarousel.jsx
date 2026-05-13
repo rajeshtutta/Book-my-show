@@ -10,9 +10,9 @@ const dataList = [
     "https://in.bmscdn.com/showcaseimage/eventimage/jab-we-separated-04-03-2021-11-10-59-372.jpg",
     "https://in.bmscdn.com/showcaseimage/eventimage/wrong-number-04-03-2021-11-11-59-741.jpg",
     "https://in.bmscdn.com/showcaseimage/eventimage/tank-cleaner-03-03-2021-06-24-19-722.jpg"
-]
+];
 
-export const AddCarousel = () => {
+const AddCarousel = () => {
 
     const responsive = {
         superLargeDesktop: {
@@ -39,7 +39,11 @@ export const AddCarousel = () => {
                 {
                     dataList?.map((banner, index) => (
                         <div style={{ padding: "0px 15px" }} key={index + 1}>
-                            <img style={{ width: "102%", cursor: "pointer" }} src={banner} alt="Advertisement banner" />
+                            <img
+                                style={{ width: "102%", cursor: "pointer" }}
+                                src={banner}
+                                alt="Advertisement banner"
+                            />
                         </div>
                     ))
                 }
@@ -47,3 +51,5 @@ export const AddCarousel = () => {
         </div>
     )
 }
+
+export default AddCarousel;
