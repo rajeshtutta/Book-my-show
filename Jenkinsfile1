@@ -125,31 +125,7 @@ pipeline {
             }
         }
 
-        stage('Upload to Nexus') {
-
-    steps {
-
-        withCredentials([
-            usernamePassword(
-                credentialsId: 'nexus-cred',
-                usernameVariable: 'NEXUS_USER',
-                passwordVariable: 'NEXUS_PASS'
-            )
-        ]) {
-
-            sh '''
-            echo "Uploading artifact to Nexus..."
-
-            curl -v -u $NEXUS_USER:$NEXUS_PASS \
-            --upload-file Book-my-show-build.zip \
-            http://localhost:8081/repository/Book-my-show/Book-my-show-build-${BUILD_NUMBER}.zip
-
-            echo "Upload completed"
-            '''
-        }
-    }
-}
-
+       
         stage('Docker Build') {
             steps {
 
