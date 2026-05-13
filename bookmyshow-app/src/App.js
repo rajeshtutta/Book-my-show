@@ -1,10 +1,14 @@
 import "./App.css";
+import Footer from "./Routes/Footer";
+import Navbar from "./Routes/Navbar";
+import Router from "./Routes/Router";
 
 function App() {
   return (
     <div className="App">
-      <h1>Book My Show Application</h1>
-      <p>CI/CD Pipeline Working Successfully 🚀</p>
+      <Navbar />
+      <Router />
+      <Footer />
     </div>
   );
 }
